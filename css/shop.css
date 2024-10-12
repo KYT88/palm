@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* Light background for contrast */
+    color: #333; /* Text color */
+    margin: 0;
+    padding: 0;
+    font-family: Quinsi;
+}
+@font-face {
+    font-family: 'Quinsi'; 
+    src: url('../fonts/Quinsi.ttf') format('truetype');
+ 
+}
+.shmain {
+    max-width: 1200px; /* Max width for the main content */
+    margin: 0 auto; /* Center the main content */
+    padding: 20px;
+    margin-bottom: 200px;
+}
+
+.shmain h1 {
+    text-align: center;
+    color: #0071ff; /* Primary color for headings */
+    margin-bottom: 40px; /* Space below the main heading */
+}
+
+.product-container {
+    display: grid; /* Use CSS Grid for layout */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive columns */
+    gap: 20px; /* Space between product cards */
+}
+
+.product-card {
+    background-color: #ffffff; /* White background for product cards */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 15px; /* Inner spacing */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transition for hover effects */
+    text-align: center; /* Center text in the card */
+}
+
+.product-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* More pronounced shadow on hover */
+}
+
+.product-card img {
+    width: 100%; /* Make image responsive */
+    border-radius: 8px; /* Rounded corners for images */
+    max-height: 200px; /* Max height to maintain uniformity */
+    object-fit: cover; /* Cover the image proportionately */
+}
+
+.shmain h2 {
+    color: #0071ff; /* Color for product names */
+    margin: 15px 0 5px; /* Margin for product names */
+}
+
+.price {
+    font-size: 18px; /* Price font size */
+    color: #b12704; /* Red color for the price */
+    margin: 5px 0; /* Margin for price */
+}
+
+.shmain p {
+    font-family: serif;
+    line-height: 1.6; /* Line height for readability */
+    color: #555; /* Darker gray for paragraph text */
+}
+
+.buy-btn {
+    background-color: #0071ff; /* Button color */
+    color: white; /* Button text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners for the button */
+    padding: 10px 15px; /* Inner spacing */
+    cursor: pointer; /* Change cursor on hover */
+    transition: background-color 0.3s; /* Transition for button color */
+}
+
+.buy-btn:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+.mal{
+    clip-path: circle();
+    height: 20rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 28px; /* Adjust heading size for smaller screens */
+    }
+
+    .product-card {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+}
